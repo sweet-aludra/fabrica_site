@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'tan-pearl';
+    src: url('fonte/tan-pearl.otf');
+}/* configuraçao da fonte da logo ('tan-pearl')*/
+
+:root {
+    --cor1: #e38384;
+    --cor2: #c35155;
+    --cor3: #87494d;
+    --cor4: #65575b;
+    --cor5: #2c3137;
+    --cor6: #1a364e;
+    --cor7: #162a40;
+}/* Paleta de cor (variaveis)*/
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,11 +22,12 @@
 
 
 body{
-    background-color: #adffdb;
+    background-color: #fcffe8;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+    margin-right: 30px;
     background-image: url(default.jpg);
     background-repeat: no-repeat;
     background-size: 3;
@@ -26,13 +42,13 @@ body{
     width: 100%;
     box-sizing: 0 3px 5px rgba(0,0,0, 0.5) ;
     overflow: hidden;
+    box-shadow: 10px 5px 30px #464646;
 }
 
 .conta1{
-    background: linear-gradient(120deg, #EE82EE 0%, #DDA0DD 100%);
     padding: 10px;
     text-align: center;
-    color: black;
+    font-family: 'tan-pearl';
 }
 
 .form{
