@@ -176,3 +176,17 @@ footer {
         height:100px;
         
 }
+
+/*Parte que modifica os cartões que mostra os produtos*/
+.card{
+    background-color: #fff;
+    width: 230px;
+    height: 190px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px #aaa ; 
+    float: left;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    
+}
