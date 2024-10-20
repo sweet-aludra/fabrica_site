@@ -28,6 +28,7 @@ header{
 
 nav ul{
     gap: 30px;
+    margin-right: 15px;
 }
 
 footer {
@@ -36,6 +37,10 @@ footer {
     flex-direction: column;
     background-color: var(--cor7);
     color: white;
+}
+footer p{
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 a {
@@ -73,11 +78,6 @@ a {
     align-items: center;
     padding: 5px;
 }
-@media(max-width: 768px) {
-    .nav-bar {
-        font-size: 10px;
-    }
-}
 
 .pais {
     float: left;
@@ -100,8 +100,6 @@ a {
     clear: both;
     display: table;
 }
-
-
 
 .pais img{
     width: 100%;
@@ -141,13 +139,9 @@ a {
 .nav-link:hover{
     color: var(--cor1);
 }/* transiçao de cor dos links*/
-@media(max-width: 720px) {
-    .nav-link{
-        font-size: 12px;
-    }
-}/*transiçao do tamanho da letra*/
 
-.login-button button{
+
+button{
     border: var(--cor1) solid 1px;
     background-color: var(--cor7);
     height: 55px;
@@ -157,15 +151,31 @@ a {
 }
 .login-button:hover button{
     background-color: var(--cor1);
-}/*transiçao de cor do butao*/
-
-.login-button button a{
+}/*transiçao de cor do botao*/
+button a{
     text-decoration: none;
     color: #fff;
     font-weight: 500;
     font-size: 1.1rem;
 }
-
+@media(max-width: 710px) {
+    .nav-link{
+        font-size: 15px;
+    }
+    button {
+        height: 45px;
+        width: 75px;
+        padding: 5px 10px;
+    }
+    #Logo {
+        font-size: 20px;
+    }
+}/*transiçao do tamanho do header*/
+@media(max-width: 670px){
+    .nav-link{
+        font-size: 13px;
+    }
+}
 
 .hea2{
     background-color: #fff;
