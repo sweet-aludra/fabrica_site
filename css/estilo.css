@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'tan-pearl';
-    src: url('fonte/tan-pearl.otf');
+    src: url('../fonte/tan-pearl.otf');
 }/* configuraçao da fonte da logo ('tan-pearl')*/
 
 :root {
@@ -16,7 +16,7 @@
 body{ 
     color:black;
     background-color: #fcffe8;
-    font-family: Arial, Helvetica;
+    font-family:  Arial, Helvetica;
     font-size: small;
 }
 
