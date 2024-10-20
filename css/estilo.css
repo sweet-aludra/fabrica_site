@@ -73,6 +73,11 @@ a {
     align-items: center;
     padding: 5px;
 }
+@media(max-width: 768px) {
+    .nav-bar {
+        font-size: 10px;
+    }
+}
 
 .pais {
     float: left;
@@ -120,14 +125,10 @@ a {
     color: #fff;
 }
 
-.nav-list{
-  display: flex;
-  align-items: center;
-}
-
 .nav-list ul{
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
@@ -140,6 +141,11 @@ a {
 .nav-link:hover{
     color: var(--cor1);
 }/* transiçao de cor dos links*/
+@media(max-width: 720px) {
+    .nav-link{
+        font-size: 12px;
+    }
+}/*transiçao do tamanho da letra*/
 
 .login-button button{
     border: var(--cor1) solid 1px;
