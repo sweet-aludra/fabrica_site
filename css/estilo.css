@@ -78,7 +78,7 @@ ul {
 /*configuraçao de CLASS ----------------*/
 .nav-bar{
     display: flex;
-    padding: 5px;
+    justify-content: center;
 }
 
 .pais {
@@ -124,9 +124,11 @@ ul {
 }
 
 .nav-list ul{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    grid-template-columns: repeat(6, 1fr); /*colunas(6) para as listas*/
+    gap: 10px;
     list-style: none;
 }
 
@@ -162,7 +164,7 @@ button a{
 
 @media(max-width: 710px) {
     .nav-link{
-        font-size: 15px;
+        font-size: 20pxpx;
     }
     button {
         height: 45px;
@@ -172,10 +174,13 @@ button a{
     #Logo {
         font-size: 20px;
     }
+    .nav-list ul{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 @media(max-width: 510px) {
     .nav-link{
-        font-size: 7px;
+        font-size: 10px;
     }
 }
 /*transiçao do tamanho do header*/
