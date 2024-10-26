@@ -259,3 +259,12 @@ button a{
     }
 }
 /*transiçao do tamanho do header*/
+
+/* linha para impedir que o footer fique no lado dos cards do produto */
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: auto auto;
+    padding: 10px 5px;
+} 
