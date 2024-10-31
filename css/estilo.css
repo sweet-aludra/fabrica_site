@@ -83,6 +83,31 @@ ul {
     flex-direction: row;
 }
 
+#participantes{
+    color: white;
+}
+#participantes h1{
+    text-align: center;
+    color: var(--cor1);
+}
+#participantes div{
+    background-color: var(--cor5);
+    padding: 10px 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 15px;
+}
+#participantes img{
+    border-radius: 50%;
+    border-left: 4px solid var(--cor2);
+}
+@media(max-width: 600px){
+    #participantes div{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /*configuraçao de CLASS ----------------*/
 .nav-bar{
