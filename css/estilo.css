@@ -83,8 +83,27 @@ ul {
 #sobre1 {
     display: flex;
     justify-content: space-around;
+    text-align: center;
     align-content: center;
     flex-direction: row;
+}
+
+#logoss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: 'tan-pearl';
+    font-size: 27px;
+}
+
+#cores ul{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    grid-template-columns: repeat(7, 1fr);
 }
 
 #participantes{
@@ -109,7 +128,13 @@ ul {
     border-left: 7px solid var(--cor2);
     transform: translateY(-50%);
 }
-@media(max-width: 750px){
+@media(max-width: 790px){
+    #cores ul{
+        gap: 10px;
+        font-size: 15px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     #participantes div{
         border-radius: 20px;
         margin-top: 90px;
