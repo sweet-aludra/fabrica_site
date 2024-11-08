@@ -166,7 +166,7 @@ ul {
         transform: translateY(-30%);
     }
 }
-@media(max-width: 300px){
+@media(max-width: 400px){
     #logoss p{
         flex-direction: column;
     }
