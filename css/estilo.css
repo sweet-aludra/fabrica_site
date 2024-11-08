@@ -128,7 +128,18 @@ ul {
     border-left: 7px solid var(--cor2);
     transform: translateY(-50%);
 }
-@media(max-width: 790px){
+@media(max-width: 900px){
+    #cores ul{
+        gap: 10px;
+        font-size: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #cores {
+        display: flex;
+       justify-content: center; 
+    }
+}
+@media(max-width: 760px){
     #cores ul{
         gap: 10px;
         font-size: 15px;
