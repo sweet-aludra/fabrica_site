@@ -96,6 +96,15 @@ ul {
     font-family: 'tan-pearl';
     font-size: 27px;
 }
+.p1 {
+    grid-area: p1;
+}
+.p2 {
+    grid-area: p2;
+}
+#logoss p{
+    grid-area: texto;
+}
 
 #cores ul{
     display: grid;
@@ -128,6 +137,7 @@ ul {
     border-left: 7px solid var(--cor2);
     transform: translateY(-50%);
 }
+
 @media(max-width: 900px){
     #cores ul{
         gap: 10px;
@@ -166,8 +176,11 @@ ul {
     }
 }
 @media(max-width: 200px){
-    #logoss p{
-        position: relative;
+    #logoss {
+        grid-template-areas: 
+            "p1"
+            "p2"
+            "texto";
     }
 }
 
