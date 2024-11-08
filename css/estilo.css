@@ -89,21 +89,12 @@ ul {
 }
 
 #logoss{
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
     font-family: 'tan-pearl';
     font-size: 27px;
-}
-.p1 {
-    grid-area: p1;
-}
-.p2 {
-    grid-area: p2;
-}
-#logoss p{
-    grid-area: texto;
 }
 
 #cores ul{
@@ -175,12 +166,9 @@ ul {
         transform: translateY(-30%);
     }
 }
-@media(max-width: 200px){
-    #logoss {
-        grid-template-areas: 
-            "p1"
-            "p2"
-            "texto";
+@media(max-width: 300px){
+    #logoss p{
+        flex-direction: column;
     }
 }
 
