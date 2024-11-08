@@ -31,10 +31,6 @@ nav ul{
     margin-right: 15px;
 }
 
-h2 {
-    color: var(--cor2);
-}
-
 footer {
     display: flex;
     align-items: center;
@@ -77,94 +73,6 @@ ul {
 }
 #empresa:hover a{
     color: var(--cor2);
-}
-
-/*section empresa.html config*/
-#sobre1 {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    align-content: center;
-    flex-direction: row;
-}
-
-#logoss{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    font-family: 'tan-pearl';
-    font-size: 27px;
-}
-
-#cores ul{
-    display: grid;
-    text-align: center;
-    align-items: center;
-    font-size: 20px;
-    color: white;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-#participantes{
-    color: white;
-}
-#participantes h2{
-    text-align: center;
-}
-#participantes div{
-    background-color: var(--cor5);
-    border-radius: 0px 20px 20px 200px;
-    display: flex;
-    height: 100px;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 120px;
-    color: var(--cor1);
-}
-#participantes img{
-    border-radius: 50%;
-    border-left: 7px solid var(--cor2);
-    transform: translateY(-50%);
-}
-
-@media(max-width: 900px){
-    #cores ul{
-        gap: 10px;
-        font-size: 20px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    #cores {
-        display: flex;
-       justify-content: center; 
-    }
-}
-@media(max-width: 760px){
-    #cores ul{
-        gap: 10px;
-        font-size: 15px;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    #participantes div{
-        border-radius: 20px;
-        margin-top: 90px;
-    }
-}
-@media(max-width: 600px){
-    #logoss p{
-        font-size: 20px;
-    }
-    #participantes div{
-        flex-direction: row;
-        align-items: center;
-        border-radius: 20px 20px;
-        margin-top: 40px;
-    }
-    #participantes img{
-        transform: translateY(-30%);
-    }
 }
 
 /*configuraçao de CLASS ----------------*/
@@ -298,17 +206,6 @@ button a{
     
 }
 
-/*section empresa.html config*/
-.secao1 {
-    align-content: center;
-    font-size: 25px;
-}
-.secao1 h2{
-    text-align: center;
-    font-size: 30px;
-}
-
-
 @media(max-width: 710px) {
     .nav-link{
         font-size: 20pxpx;
@@ -324,28 +221,10 @@ button a{
     .nav-list ul{
         grid-template-columns: repeat(3, 1fr); /*quebra das li no menu*/
     }
-    .secao1 {
-        font-size: 18px;
-    }
-    .secao1 h2{
-        font-size: 23px;
-    }
 }
 @media(max-width: 560px) {
     .nav-link{
         font-size: 10px;
-    }
-    #sobre1 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-    .secao1 {
-        font-size: 14px;
-    }
-    .secao1 h2{
-        font-size: 20px;
     }
 }
 /*transiçao de tamanho*/
