@@ -151,7 +151,7 @@ ul {
         margin-top: 90px;
     }
 }
-@media(max-width: 600px){
+@media(max-width: 500px){
     #logoss p{
         font-size: 20px;
     }
