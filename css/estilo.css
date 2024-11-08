@@ -152,6 +152,9 @@ ul {
     }
 }
 @media(max-width: 600px){
+    #logoss p{
+        font-size: 20px;
+    }
     #participantes div{
         flex-direction: row;
         align-items: center;
