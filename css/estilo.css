@@ -151,7 +151,7 @@ ul {
         margin-top: 90px;
     }
 }
-@media(max-width: 500px){
+@media(max-width: 600px){
     #logoss p{
         font-size: 20px;
     }
@@ -163,6 +163,11 @@ ul {
     }
     #participantes img{
         transform: translateY(-30%);
+    }
+}
+@media(max-width: 200px){
+    #logoss p{
+        position: relative;
     }
 }
 
