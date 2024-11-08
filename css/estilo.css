@@ -154,7 +154,7 @@ ul {
 }
 @media(max-width: 600px){
     #logoss p{
-        font-size: 20px;
+        font-size: 10px;
     }
     #participantes div{
         flex-direction: row;
@@ -164,11 +164,6 @@ ul {
     }
     #participantes img{
         transform: translateY(-30%);
-    }
-}
-@media(max-width: 400px){
-    #logoss p{
-        flex-direction: column;
     }
 }
 
