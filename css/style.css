@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'tan-pearl';
     src: url('fonte/tan-pearl.otf');
-}/* configuraçao da fonte da logo ('tan-pearl')*/
+} /* Configuração da fonte da logo ('tan-pearl') */
 
 :root {
     --cor1: #e38384;
@@ -11,62 +11,62 @@
     --cor5: #2c3137;
     --cor6: #1a364e;
     --cor7: #162a40;
-}/* Paleta de cor (variaveis)*/
+} /* Paleta de cores (variáveis) */
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-
-
-body{
+body {
     background-color: #fcffe8;
     min-height: 100vh;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     margin-right: 30px;
     background-image: url(default.jpg);
     background-repeat: no-repeat;
-    background-size: 3;
-        
+    background-size: cover; /* Ajuste para o background cobrir toda a tela */
+    padding: 0;
 }
-    
-.conteudo{
+
+/* Reseta as margens e o padding de todos os elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.conteudo {
     background-color: #FAFAFA;
     border-radius: 10px;
     margin: 10px;
     max-width: 600px;
     width: 100%;
-    box-sizing: 0 3px 5px rgba(0,0,0, 0.5) ;
+    box-sizing: border-box; /* Corrige o problema de box-sizing */
     overflow: hidden;
     box-shadow: 10px 5px 30px #464646;
 }
 
-.conta1{
+.conta1 {
     padding: 10px;
     text-align: center;
     font-family: 'tan-pearl';
 }
 
-.form{
-    padding: 18px;
+.form {
+    padding: 10px;
 }
 
-.formaconteudo{
-    margin-bottom: 8px;
-    padding-bottom: 18px;
+.formaconteudo {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
     position: relative;
 }
 
-.formaconteudo label{
+.formaconteudo label {
     display: inline-block;
     margin-bottom: 4px;
 }
 
-.formaconteudo input{
+.formaconteudo input {
     display: block;
     width: 100%;
     border-radius: 8px;
@@ -74,14 +74,14 @@ body{
     border: 2px solid #dfdfdf;
 }
 
-.formaconteudo a{
+.formaconteudo a {
     position: absolute;
     bottom: -8px;
     left: 0;
-    visibility: hidden; 
+    visibility: hidden;
 }
 
-.form button{
+.form button {
     background-color: #DA70D6;
     color: #fff;
     width: 100%;
@@ -93,11 +93,58 @@ body{
     margin-top: 14px;
 }
 
-.formaconteudo.error input{
+.formaconteudo.error input {
     border-color: #dc143d;
 }
 
-.formaconteudo.error a{
+.formaconteudo.error a {
     color: #dc143d;
     visibility: visible;
+}
+
+/* Media Queries para Responsividade */
+
+/* Tela de dispositivos pequenos (smartphones) */
+@media (max-width: 600px) {
+    body {
+        margin-right: 0;
+    }
+
+    .conteudo {
+        margin: 5px;
+        box-shadow: 5px 5px 20px #464646;
+    }
+
+    .form button {
+        font-size: 14px; /* Reduz o tamanho do botão em dispositivos móveis */
+        padding: 8px; /* Ajusta o padding */
+    }
+
+    .formaconteudo input {
+        padding: 10px; /* Ajusta o padding dos campos em dispositivos móveis */
+    }
+}
+
+/* Tela de dispositivos médios (tablets) */
+@media (max-width: 1024px) {
+    .conteudo {
+        margin: 10px;
+        max-width: 80%; /* Limita a largura em telas médias */
+    }
+
+    .form button {
+        font-size: 15px; /* Ajusta o tamanho do botão para tablets */
+    }
+
+    .formaconteudo input {
+        padding: 9px; /* Ajusta o padding dos campos */
+    }
+}
+
+/* Tela de dispositivos grandes (desktops) */
+@media (min-width: 1025px) {
+    .conteudo {
+        margin: 20px;
+        max-width: 600px; /* Limita a largura para grandes telas */
+    }
 }
