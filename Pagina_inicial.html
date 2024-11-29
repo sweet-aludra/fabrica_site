@@ -10,70 +10,111 @@
 <body>
     <header>
         <div id="cabecalho">
-          <div class="logo">
-            <picture> <!--Logo e suas variaçoes de tamanho-->
-              <source media="(max-width: 650px)" srcset="imgs/Logos/icon2_p.png" type="image/png">
-              <source media="(max-width: 850px)" srcset="imgs/Logos/icon2_m.png" type="image/png">
-              <img src="imgs/Logos/icon2_g.png" alt="logo da plena luna">
-            </picture>
-            <p id="Logo">Plena luna</p>
-          </div>
+            <div class="logo">
+                <picture>
+                    <!--Logo e suas variaçoes de tamanho-->
+                    <source media="(max-width: 650px)" srcset="imgs/Logos/icon2_p.png" type="image/png">
+                    <source media="(max-width: 850px)" srcset="imgs/Logos/icon2_m.png" type="image/png">
+                    <img src="imgs/Logos/icon2_g.png" alt="logo da plena luna">
+                </picture>
+                <p id="Logo">Plena luna</p>
+            </div>
 
-        <nav class="nav-bar">
-          <div class="nav-list">
-            <ul>
-                <li><a href="Perfumes.html" class="nav-link">Perfumaria</a></li>
-                <li><a href="CeB.html" class="nav-link">corpo e banho</a></li>
-                <li><a href="Makeup.html" class="nav-link">Maquiagens</a></li>
-                <li><a href="Cabelos.html" class="nav-link">Cabelos</a></li>
-                <li><a href="Pele.html" class="nav-link">Cuidados com a pele</a></li>
-            </ul>
-          </div>
-        </nav>
+            <div class="login-button">
+                <button id="botaoPrincipal">Entrar</button>
+            </div>
+        </div>
+
+            <nav class="nav-bar">
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="Perfumes.html" class="nav-link">Perfumaria</a></li>
+                        <li><a href="CeB.html" class="nav-link">corpo e banho</a></li>
+                        <li><a href="Makeup.html" class="nav-link">Maquiagens</a></li>
+                        <li><a href="Cabelos.html" class="nav-link">Cabelos</a></li>
+                        <li><a href="Pele.html" class="nav-link">Cuidados com a pele</a></li>
+
+                    </ul>
+                </div>
+
+            </nav>
     </header>
 
     <img src="imgs/img2.jpg" class="avi">
-    
+
     <section>
-      
-    <h1 class="propag">Principais perfumes</h1>
-    <div class="row">    
-        <div class="pais">
-            <img src="imgs/perf1.jpg" alt="">
-            <h2>Qualidade</h2>
-            <p>Produtos completamente veganos epensados no bem do cliente!
-            <br>
-                Com a nossa tecnologia fomos permitidos fazer perfumes
-            <br>
-                que provoca alergia em ninguém e alegria instantanea</p>
-        </div>
 
-        <div class="pais">
-            <img src="imgs/flores.jpg" alt="">
-            <h2>Materiais</h2>
-            <p>Usamos somente materiais com a maior qualidade do mercado
-            <br>
-              como o classico leite de rosas e outras materias primas</p>
-        </div>
+        <h1 class="propag">Principais perfumes</h1>
+        <div class="row">
+            <div class="pais">
+                <img src="imgs/perf1.jpg" alt="">
+                <h2>Qualidade</h2>
+                <p>
+                    Produtos completamente veganos epensados no bem do cliente!
+                    <br>
+                    Com a nossa tecnologia fomos permitidos fazer perfumes
+                    <br>
+                    que provoca alergia em ninguém e alegria instantanea
+                </p>
+            </div>
 
-        <div class="pais">
-            <img src="imgs/Sorriso.avif" alt="">
-            <h2>Confiabilidade</h2>
-            <p>Com nossos produtos você nunca ficara na mão,  
-            <br>
-                com durabilidade de até 20 horas e caso não goste do produto iremos  
-            <br> 
-                reembolsar o valor total</p>
+            <div class="pais">
+                <img src="imgs/flores.jpg" alt="">
+                <h2>Materiais</h2>
+                <p>
+                    Usamos somente materiais com a maior qualidade do mercado
+                    <br>
+                    como o classico leite de rosas e outras materias primas
+                </p>
+            </div>
+
+            <div class="pais">
+                <img src="imgs/Sorriso.avif" alt="">
+                <h2>Confiabilidade</h2>
+                <p>
+                    Com nossos produtos você nunca ficara na mão,
+                    <br>
+                    com durabilidade de até 20 horas e caso não goste do produto iremos
+                    <br>
+                    reembolsar o valor total
+                </p>
+            </div>
         </div>
-    </div>
     </section>
 
     <footer>
-      <p>Os preços da loja online podem variar em relação as lojas físicas e venda direta.</p>
-      <p id="empresa"><a href="Empresa.html">Plena Luna</a></p>
-      <p>Av. Rui Barbosa, 4110 - Bloco 1 a 22 - Bairro Parque da Fonte - São José dos Pinhais - Paraná. CEP: 83.050-010 | CNPJ: 11.137.051/0719-54</p>
+        <p>Os preços da loja online podem variar em relação as lojas físicas e venda direta.</p>
+        <p id="empresa"><a href="Empresa.html">Plena Luna</a></p>
+        <p>Av. Rui Barbosa, 4110 - Bloco 1 a 22 - Bairro Parque da Fonte - São José dos Pinhais - Paraná. CEP: 83.050-010 | CNPJ: 11.137.051/0719-54</p>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    // Função para verificar se o usuário está logado
+    function verificarLogin() {
+    const usuarioLogado = localStorage.getItem("usuarioLogado");
+
+    const botao = document.getElementById("botaoPrincipal");
+    if (usuarioLogado) {
+    botao.innerText = "Logout";
+    botao.onclick = logout;
+    } else {
+    botao.innerText = "Entrar";
+    botao.onclick = () => window.location.href = "cadastro.html";
+    }
+    }
+
+    // Função para fazer logout
+    function logout() {
+    localStorage.removeItem("usuarioLogado");
+    alert("Você saiu com sucesso!");
+    location.reload(); // Recarrega a página
+    }
+
+    window.onload = verificarLogin;
+    </script>
+
+</html>
+
 </body>
 </html>
