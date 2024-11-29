@@ -148,11 +148,12 @@ ul {
 
 button {
     border: var(--cor1) solid 1px;
-    background-color: var(--cor7);
+    background-color: var(--cor6);
     height: 55px;
     width: 95px;
     padding: 10px 15px;
     border-radius: 5px;
+    color: #fff;
 }
 
 .login-button{
