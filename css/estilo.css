@@ -155,6 +155,9 @@ button {
     border-radius: 5px;
 }
 
+.login-button{
+    display: center;
+}
 .login-button:hover button {
     background-color: var(--cor1);
 }/*transiçao de cor do botao*/
